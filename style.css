@@ -1,176 +1,217 @@
-/* === 基本スタイル === */
+/* リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.8;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-    padding-top: 100px; /* 固定ヘッダー用の余白 */
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.8;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
 }
 
-/* === ヘッダー固定＆ナビゲーション === */
-.site-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    background-color: #007acc;
-    color: white;
-    padding: 20px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+/* ヘッダー */
+header {
+  background: #222;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
-.site-header .logo {
-    font-size: 1.8em;
-    margin: 0;
-    padding-left: 20px;
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
 }
 
-.main-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px 0 0;
-    padding: 0;
+.logo {
+  font-size: 1.5em;
 }
 
-.main-nav li {
-    margin: 0 15px;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.main-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 6px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.main-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* === セクション全体 === */
-section {
-    padding: 60px 20px;
-    border-bottom: 1px solid #e0e0e0;
-    background-color: #ffffff;
+/* Heroセクション */
+.hero {
+  background-color: #444;
+  color: white;
+  padding: 120px 20px 60px;
+  text-align: center;
 }
 
-/* セクションタイトル */
-section h2 {
-    font-size: 1.8em;
-    color: #2c3e50;
-    margin-bottom: 0.5em;
-    border-left: 5px solid #007acc;
-    padding-left: 12px;
+/* セクション */
+.section {
+  padding: 60px 20px;
 }
 
-/* 段落 */
-section p {
-    font-size: 1em;
-    margin-bottom: 1em;
+.bg-light {
+  background-color: #f0f0f0;
 }
 
-/* === 個別セクション色調整 === */
-.top {
-    background-color: #e0f7fa;
-    text-align: center;
-    border-bottom: 2px solid #b2ebf2;
+h2 {
+  margin-bottom: 20px;
 }
 
-.about {
-    background-color: #ffffff;
+.services {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.badminton {
-    background-color: #f9fbe7;
+.services li {
+  flex: 1;
+  min-width: 200px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ddd;
 }
 
-.gallery {
-    background-color: #f3e5f5;
+/* フォーム */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.blog {
-    background-color: #e8f5e9;
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
 }
 
-.faq {
-    background-color: #fffde7;
+textarea {
+  resize: vertical;
+  height: 100px;
 }
 
-.contact {
-    background-color: #fff3e0;
+button {
+  padding: 10px;
+  border: none;
+  background: #333;
+  color: white;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.contact p:last-child {
-    font-weight: bold;
-    color: #e65100;
+button:hover {
+  background: #555;
 }
 
-/* === ブログ記事 === */
-.blog article {
-    margin-bottom: 20px;
+/* フッター */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
 
-.blog h3 {
-    font-size: 1.2em;
-    color: #007acc;
-    margin-bottom: 8px;
+/* レスポンシブ */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .services {
+    flex-direction: column;
+  }
 }
 
-/* === FAQスタイル === */
+
+/* すでに記載したCSSの続きとして追加 */
+
+.breadcrumb {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* 実績セクション */
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.work-item {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  border-left: 5px solid #007acc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* FAQ */
 .faq dt {
-    font-weight: bold;
-    margin-top: 1em;
-    color: #007acc;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .faq dd {
-    margin-left: 1em;
-    margin-bottom: 1em;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
-/* === フッター === */
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 30px 20px;
-    font-size: 0.9em;
+/* マップ */
+.map iframe {
+  width: 100%;
+  border-radius: 8px;
 }
 
-.footer a {
-    color: #80d8ff;
-    text-decoration: none;
+/* フッター内ナビ */
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
 }
 
-.footer a:hover {
-    text-decoration: underline;
+footer nav a {
+  color: #ccc;
+  font-size: 0.9em;
+  text-decoration: none;
 }
 
-/* === レスポンシブ対応 === */
-@media screen and (max-width: 768px) {
-    .main-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+footer nav a:hover {
+  text-decoration: underline;
+}
 
-    .main-nav li {
-        margin: 10px 0;
-    }
+/* ホバー付きボタン */
+button {
+  transition: background 0.3s ease;
+}
 
-    .site-header .logo {
-        text-align: center;
-        padding: 0;
-    }
+button:hover {
+  background-color: #007acc;
 }

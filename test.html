@@ -1,228 +1,129 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>私のホームページ</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>シンプルでプロっぽいサイト</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <h1 class="logo">My Website</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#top">ホーム</a></li>
-                    <li><a href="#about">私について</a></li>
-                    <li><a href="#badminton">バドミントン</a></li>
-                    <li><a href="#gallery">ギャラリー</a></li>
-                    <li><a href="#blog">ブログ</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <section id="top" class="top">
-            <h2>ホームページ作り始めてみました</h2>
-            <p>このホームページは、私の趣味や活動を紹介するために作成しました。</p>
-        </section>
+<header>
+  <div class="container">
+    <h1 class="logo">My Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">私たちについて</a></li>
+        <li><a href="#service">サービス</a></li>
+        <li><a href="#works">実績</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-        <section id="about" class="about">
-            <h2>私について</h2>
-            <p>私は趣味でウェブサイトを作成しています。ここでは、私の趣味や日常生活について紹介します。</p>
-        </section>
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h2>あなたのビジネスをサポートします</h2>
+    <p>信頼と実績で選ばれています。</p>
+  </div>
+</section>
 
-        <section id="badminton" class="badminton">
-            <h2>バドミントン</h2>
-            <p>バドミントンは私の大好きなスポーツです。週末には友人と一緒にプレイしています。</p>
-        </section>
+<!-- パンくず -->
+<div class="breadcrumb container">
+  <p>ホーム &gt; トップページ</p>
+</div>
 
-        <section id="gallery" class="gallery">
-            <h2>ギャラリー</h2>
-            <p>ここでは最近の活動の様子を紹介します。（※画像は現在準備中です）</p>
-            <ul>
-                <li>バドミントン大会の様子</li>
-                <li>友人とのアウトドア活動</li>
-                <li>勉強会・イベントの記録</li>
-            </ul>
-        </section>
+<!-- About -->
+<section id="about" class="section">
+  <div class="container">
+    <h2>私たちについて</h2>
+    <p>当社は〇〇業界で10年以上の経験を持ち、クライアントの課題解決を支援しています。</p>
+  </div>
+</section>
 
-        <section id="blog" class="blog">
-            <h2>ブログ</h2>
-            <article>
-                <h3>最近読んだ本について</h3>
-                <p>Webデザインに関する良書を読みました。「〇〇デザイン入門」がおすすめです。</p>
-            </article>
-            <article>
-                <h3>CSSでハマった話</h3>
-                <p>最近、marginとpaddingの違いに苦労しました。備忘録としてブログを書いています。</p>
-            </article>
-        </section>
+<!-- Service -->
+<section id="service" class="section bg-light">
+  <div class="container">
+    <h2>サービス</h2>
+    <ul class="services">
+      <li>Web制作</li>
+      <li>マーケティング支援</li>
+      <li>業務コンサルティング</li>
+    </ul>
+  </div>
+</section>
 
-        <section id="faq" class="faq">
-            <h2>よくある質問</h2>
-            <dl>
-                <dt>Q. HTMLやCSSはどうやって学びましたか？</dt>
-                <dd>A. YouTubeや書籍、オンライン講座を活用しました。</dd>
+<!-- 実績 -->
+<section id="works" class="section">
+  <div class="container">
+    <h2>実績・お客様の声</h2>
+    <div class="works">
+      <div class="work-item">
+        <h3>株式会社○○様</h3>
+        <p>売上が120%アップしました！</p>
+      </div>
+      <div class="work-item">
+        <h3>〇〇クリニック様</h3>
+        <p>Web予約で業務効率が改善しました。</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <dt>Q. ホームページ作成で一番楽しいことは？</dt>
-                <dd>A. 思い通りにデザインが組み上がった瞬間が一番嬉しいです。</dd>
-            </dl>
-        </section>
+<!-- FAQ -->
+<section id="faq" class="section bg-light">
+  <div class="container">
+    <h2>よくある質問</h2>
+    <dl class="faq">
+      <dt>Q. 見積もりは無料ですか？</dt>
+      <dd>A. はい、すべて無料でご対応しています。</dd>
 
-        <section id="contact" class="contact">
-            <h2>お問い合わせ</h2>
-            <p>ご意見やご感想がありましたら、以下のメールアドレスまでご連絡ください。</p>
-            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
-        </section>
-        <section id="thanks" class="thanks">
-            <h2>感謝の言葉</h2>
-            <p>このホームページを訪れてくださった皆様、ありがとうございます。これからも更新していきますので、よろしくお願いします。</p>
-        </section>
-        <section id="links" class="links">
-            <h2>リンク集</h2>
-            <ul>
-                <li><a href="https://www.example.com" target="_blank" rel="noopener">おすすめサイト1</a></li>
-                <li><a href="https://www.example.com" target="_blank" rel="noopener">おすすめサイト2</a></li>
-                <li><a href="https://www.example.com" target="_blank" rel="noopener">おすすめサイト3</a></li>
-            </ul>
-        </section>
-        <section id="resources" class="resources">
-            <h2>学習リソース</h2>
-            <p>HTMLやCSSを学ぶためのリソースを紹介します。</p>
-            <ul>
-                <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></li>
-                <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a></li>
-                <li><a href="https://www.freecodecamp.org" target="_blank" rel="noopener">freeCodeCamp</a></li>
-            </ul>
-        </section>
-        <section id="updates" class="updates">
-            <h2>更新情報</h2>
-            <p>このセクションでは、サイトの更新情報をお知らせします。</p>
-            <ul>
-                <li>2023年10月1日: ホームページを公開しました。</li>
-                <li>2023年10月5日: ギャラリーセクションを追加しました。</li>
-                <li>2023年10月10日: ブログセクションを更新しました。</li>
-            </ul>
-        </section>
-        <section id="feedback" class="feedback">
-            <h2>フィードバック</h2>
-            <p>このサイトに関するフィードバックをお待ちしています。以下のフォームからご意見をお寄せください。</p>
-            <form action="#" method="post">
-                <label for="name">お名前:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">メールアドレス:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">メッセージ:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">送信</button>
-            </form>
-        </section>
-        <section id="social" class="social">
-            <h2>ソーシャルメディア</h2>
-            <p>私のソーシャルメディアアカウントをフォローしてください。</p>
-            <ul>
-                <li><a href="https://twitter.com/your-twitter-id" target="_blank" rel="noopener">Twitter</a></li>
-                <li><a href="https://www.instagram.com/your-instagram-id" target="_blank" rel="noopener">Instagram</a></li>
-                <li><a href="https://www.facebook.com/your-facebook-id" target="_blank" rel="noopener">Facebook</a></li>
-            </ul>
-        </section>
-        <section id="privacy" class="privacy">
-            <h2>プライバシーポリシー</h2>
-            <p>このサイトでは、個人情報の保護に努めています。</p>
-            <p>収集した情報は、サイトの改善や連絡のために使用します。</p>
-            <p>詳細は<a href="privacy-policy.html">プライバシーポリシー</a>をご覧ください。</p>
-        </section>
-        <section id="terms" class="terms">
-            <h2>利用規約</h2>
-            <p>このサイトを利用する際は、以下の利用規約に同意してください。</p>
-            <p>サイトの内容は予告なく変更されることがあります。</p>
-            <p>詳細は<a href="terms-of-service.html">利用規約</a>をご覧ください。</p>
-        </section>
-        <section id="sitemap" class="sitemap">
-            <h2>サイトマップ</h2>
-            <p>このサイトの構成を以下に示します。</p>
-            <ul>
-                <li><a href="#top">ホーム</a></li>
-                <li><a href="#about">私について</a></li>
-                <li><a href="#badminton">バドミントン</a></li>
-                <li><a href="#gallery">ギャラリー</a></li>
-                <li><a href="#blog">ブログ</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
-                <li><a href="#thanks">感謝の言葉</a></li>
-                <li><a href="#links">リンク集</a></li>
-                <li><a href="#resources">学習リソース</a></li>
-                <li><a href="#updates">更新情報</a></li>
-                <li><a href="#feedback">フィードバック</a></li>
-                <li><a href="#social">ソーシャルメディア</a></li>
-                <li><a href="#privacy">プライバシーポリシー</a></li>
-                <li><a href="#terms">利用規約</a></li>
-                <li><a href="#sitemap">サイトマップ</a></li>
-            </ul>
-        </section>
-        <section id="credits" class="credits">
-            <h2>クレジット</h2>
-            <p>このサイトのデザインやコードは、私自身が学んだことを基に作成しています。</p>
-            <p>使用した画像やフォントのクレジットは、各セクションで明記しています。</p>
-        </section>
-        <section id="future" class="future">
-            <h2>今後の予定</h2>
-            <p>このサイトでは、今後も新しいコンテンツを追加していく予定です。</p>
-            <p>特に、バドミントンの技術やトレーニング方法についての情報を充実させていきます。</p>
-        </section>
-        <section id="events" class="events">
-            <h2>イベント情報</h2>
-            <p>今後のイベントや活動についての情報をお知らせします。</p>
-            <ul>
-                <li>2023年11月15日: バドミントン大会開催</li>
-                <li>2023年12月1日: ウェブデザイン勉強会</li>
-                <li>2024年1月10日: 新年会</li>
-            </ul>
-        </section>
-        <section id="testimonials" class="testimonials">
-            <h2>お客様の声</h2>
-            <p>このサイトを訪れた方々からの感想を紹介します。</p>
-            <blockquote>
-                <p>「とても見やすくて、情報が豊富です！」</p>
-                <footer>— ユーザーA</footer>
-            </blockquote>
-            <blockquote>
-                <p>「バドミントンの情報が役立ちました！」</p>
-                <footer>— ユーザーB</footer>
-            </blockquote>
-        </section>
-        <section id="donate" class="donate">
-            <h2>寄付のお願い</h2>
-            <p>このサイトの運営を支援していただける方は、以下のリンクから寄付をお願いします。</p>
-            <p>寄付はサイトの維持や新しいコンテンツの作成に役立てられます。</p>
-            <p><a href="https://www.paypal.com/donate?hosted_button">寄付する</a></p>
-        </section>
-        <section id="newsletter" class="newsletter">
-            <h2>ニュースレター登録</h2>
-            <p>最新情報をメールで受け取りたい方は、ニュースレターに登録してください。</p>
-            <form action="#" method="post">
-                <label for="email-newsletter">メールアドレス:</label>
-                <input type="email" id="email-newsletter" name="email-newsletter" required>
-                <button type="submit">登録</button>
-            </form>
-        </section>
-    </main>
+      <dt>Q. 制作期間はどれくらいですか？</dt>
+      <dd>A. 一般的には1〜2ヶ月ですが、ご希望に合わせて調整可能です。</dd>
+    </dl>
+  </div>
+</section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; <span id="year"></span> 私のホームページ</p>
-            <p>このサイトは、HTMLとCSSを学ぶための練習用に作成されました。</p>
-            <p>GitHub: <a href="https://github.com/your-github-id" target="_blank" rel="noopener">your-github-id</a></p>
-        </div>
-    </footer>
+<!-- Contact -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2>お問い合わせ</h2>
+    <form>
+      <input type="text" placeholder="お名前" required>
+      <input type="email" placeholder="メールアドレス" required>
+      <textarea placeholder="お問い合わせ内容" required></textarea>
+      <button type="submit">送信する</button>
+    </form>
+  </div>
+</section>
 
-    <script>
-        // フッターの年を自動更新
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+<!-- アクセスマップ -->
+<section class="section bg-light">
+  <div class="container">
+    <h2>アクセス</h2>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer>
+  <div class="container">
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+    <nav>
+      <ul>
+        <li><a href="#top">トップ</a></li>
+        <li><a href="#about">私たちについて</a></li>
+        <li><a href="#service">サービス</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>
